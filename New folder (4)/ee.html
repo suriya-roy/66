@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+    .parallax {
+      background-image: url('https://via.placeholder.com/1500x1000');
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .section {
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .section h1 {
+      font-size: 3em;
+    }
+    .section p {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    .section:nth-child(even) {
+      background-color: #333;
+    }
+    .section:nth-child(odd) {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parallax"></div>
+
+  <div class="section">
+    <h1>Welcome to Our Website</h1>
+    <p>Explore the world of beautiful parallax effects!</p>
+  </div>
+
+  <div class="parallax"></div>
+
+  <div class="section">
+    <h1>Our Services</h1>
+    <p>We offer high-quality web development and design services.</p>
+  </div>
+
+  <div class="parallax"></div>
+
+  <div class="section">
+    <h1>Contact Us</h1>
+    <p>Get in touch for more information on our services.</p>
+  </div>
+
+</body>
+</html>

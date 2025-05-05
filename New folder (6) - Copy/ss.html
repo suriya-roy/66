@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Scrollbar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .content {
+      height: 400px;
+      overflow-y: scroll;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .content::-webkit-scrollbar {
+      width: 10px;
+    }
+    .content::-webkit-scrollbar-thumb {
+      background-color: #0077cc;
+      border-radius: 5px;
+    }
+    .content::-webkit-scrollbar-thumb:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h2>Custom Scrollbar Example</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada risus vitae velit sollicitudin.</p>
+    <p>Aliquam erat volutpat. Fusce vehicula mi at lectus elementum, nec maximus felis tincidunt.</p>
+    <p>Morbi ac ante lorem. Pellentesque egestas malesuada urna at varius. Curabitur id felis ut elit feugiat pharetra.</p>
+    <p>Suspendisse ac fringilla risus. In ac sem vel nulla sollicitudin posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In non turpis nec sapien dignissim dignissim ac sed lorem.</p>
+    <p>Curabitur in ante auctor, tristique libero ut, elementum lacus. Fusce at neque sed orci tempor euismod a ac urna.</p>
+  </div>
+
+</body>
+</html>
